@@ -23,5 +23,4 @@ elif [ -f package.json ]; then
 	npm install
 fi
 
-pod stop {{app}}
-pod start {{app}}
+pm2 reload {{app}}
